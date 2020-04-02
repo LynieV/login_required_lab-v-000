@@ -17,10 +17,5 @@ class SessionsController < ApplicationController
     sessions.delete :name
   end
 
-  private
-
-  def current_user
-    sessions[:name] = params[:user_id]
-  end
 
 end
