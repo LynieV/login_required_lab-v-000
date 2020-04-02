@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
 
 
   def destroy
-    sessions.destroy :name
+    sessions.delete :name
   end
 
   private
