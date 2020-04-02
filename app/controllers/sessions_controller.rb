@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
   private
 
   def current_user
-    sessions[:name] = params[:name]
+    sessions[:name] = params[:user_id]
   end
 
 end
