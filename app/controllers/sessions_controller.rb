@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def create
-    
+
   end
 
   def destroy
@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
   private
 
   def current_user
-
+    sessions[:name] = params[:name]
   end
 
 end
